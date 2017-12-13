@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Dark Slate</title>
+	<link rel=StyleSheet href="style.css">
+</head>
+<body>
+<div id="container" class="ui-draggable" style="position: relative; top: 237px; left: 338px;">
+			<div class="PS1"><p class="at">@</p><p class="amper">~</p></div>
+				<div id="links">
+				<ul class="main">
+					<li>reddit</li>
+					<li><a href="https://www.reddit.com/r/unixporn/">up</a></li><li>
+					<li><a href="https://www.reddit.com/r/talesfromtechsupport/">tfts</a></li><li>
+					<li><a href="https://www.reddit.com/r/desktops/">dsktps</a></li><li>
+					<li><a href="https://www.reddit.com/r/worldbuilding/">wrldblding</a></li><li>
+					<li><a href="https://www.reddit.com/r/conlangs/">conlangs</a></li><li>
+					<li><a href="https://www.reddit.com/u/torvim/saved/">saved</a></li><li>
+				</li></ul>
+				<ul class="unix">
+					<li>unix</li>
+					<li><a href="http://distrowatch.com/">distrowatch</a></li><li>
+					</li><li><a href="http://bsd.org">docs/bsd</a></li><li>
+					</li><li><a href="http://tldp.org">docs/linux</a></li><li>
+					</li><li><a href="https://www.freshports.org">docs/ports</a></li><li>
+				</li></ul>
+				<ul class="utils">
+					<li>utils</li>
+					<li><a href="https://twitter.com/dumpmon">dumpmon</a></li><li>
+					</li><li><a href="https://paste.xinu.at/">filebin</a></li><li>
+					</li><li><a href="http://pomf.se/">imghost</a></li><li>
+					</li><li><a href="https://youtube.com">vidhost</a></li><li>
+				</li></ul>
+				<ul class="gfx">
+					<li>gfk</li>
+					<li><a href="http://deviantart.com">DA</a></li><li>
+					</li><li><a href="http://dotshare.it">dotshare</a></li><li>
+					</li><li><a href="http://simpledesktops.com/">simpledesktops</a></li><li>
+					</li><li><a href="http://wallbase.cc/home">wallbase.sh</a></li><li>
+				</li></ul>
+				<ul class="bits">
+					<li>bits</li>
+					<li><a href="https://animebytes.tv">animebytes</a></li><li>
+					</li><li><a href="http://bitsnoop.com">bitsnoop</a></li><li>
+					</li><li><a href="https://www.nzbzombie.com">nzbzombie</a></li><li>
+					</li><li><a href="https://thepiratebay.sx">piratebay</a></li><li>
+				</li></ul>
+				</div>
+				<div class="PS1"><p class="at">@</p><p class="amper">~</p>
+				<input name="keywords" type="text" id="keywords" spellcheck="false"onkeypress="handleKeyPress(event)">
+	  			<input type="hidden" name="hl" value="cz"> 
+	  			<input maxlength="250" size="40" tabindex="1" name="q" value=""> 
+	 			<input type="submit" value="go" name="btnG"> 
+				</form>
+				</div>
+		</div>
+		<script>
+		function handleKeyPress(e){
+ 			var key=e.keyCode || e.which;
+  			if (key==13){
+  				var text = document.getElementById("keywords").value;
+    			window.location = "https://duckduckgo.com/?q=" + text;
+ 			}
+		}
+		</script>
+</body>
+</html>

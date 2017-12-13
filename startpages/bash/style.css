@@ -1,0 +1,156 @@
+@import "https://startpages.github.io/startpages/Startpage_kopri-nb/style/normalize.css";
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Black */
+/* Red */
+/* Green */
+/* Yellow */
+/* Blue */
+/* Magenta */
+/* Cyan */
+/* White */
+body {
+  background: #1a1a1a url('https://startpages.github.io/startpages/Startpage_kopri-nb/style/g.png') repeat;
+}
+a {
+  color: #dddddd;
+  text-decoration: none;
+  display: block;
+  float: none;
+}
+ul {
+  list-style: none;
+  padding: 6px 4px 8px 6px;
+  margin: 0;
+  width: 180px;
+  float: left;
+}
+input[type="submit"] {
+  display: none;
+}
+input {
+  background-color: #1a1a1a;
+  color: #dddddd;
+  border: none;
+  font-family: monospace;
+  padding: 0;
+}
+#container {
+  background-color: #1a1a1a;
+  font-family: monospace;
+  font-size: 13px;
+  width: 585px;
+  height: 290px;
+  padding: 5px;
+  border: 6px solid #404040;
+  color: #404040;
+}
+#search {
+  float: left;
+  margin: 0 0 0 6px;
+  padding: 0;
+}
+#links {
+  margin: 7px 0px 0px 2px;
+  font-size: 12px;
+  height: 172px;
+}
+.PS1 {
+  padding: 5px 0px 0px 5px;
+  display: block;
+  width: 585px;
+}
+.PS1:nth-of-type(1)::after {
+  content: "darkslate";
+  margin: 0 0 0 6px;
+  font-size: 13px;
+  color: #B8D68C;
+}
+.at::before {
+  content: "lewis";
+  color: #b8d68c;
+}
+.at {
+  float: left;
+  color: #cccccc;
+}
+.at::after {
+  content: "torvim";
+  color: #4e9fb1;
+}
+.amper::before {
+  content: ":";
+  color: #cccccc;
+}
+.amper {
+  float: left;
+  color: #9b64fb;
+}
+.amper::after {
+  content: " >>";
+  color: #e84f4f;
+}
+.main li {
+  color: #e84f4f;
+}
+.main li a:hover {
+  color: #d23d3d;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.utils li {
+  color: #b8d68c;
+}
+.utils li a:hover {
+  color: #a0cf5d;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.gfx li {
+  color: #e1aa5d;
+}
+.gfx li a:hover {
+  color: #f39d21;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.unix li {
+  color: #4d679a;
+}
+.unix li a:hover {
+  color: #4e9fb1;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.stack li {
+  color: #9b64fb;
+}
+.stack li a:hover {
+  color: #8542ff;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.bits li {
+  color: #6d878d;
+}
+.bits li a:hover {
+  color: #42717b;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
