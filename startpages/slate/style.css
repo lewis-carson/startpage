@@ -83,6 +83,16 @@ ul {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+.unix li {
+  color: #4d679a;
+}
+.unix li a:hover {
+  color: #4e9fb1;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 
 a {
   color: #dddddd;
@@ -98,7 +108,8 @@ li {
 
    float   : left;
    width   : 25%;
-   padding : 0px; /* this will be applied internally, due to 
+   padding : 5px; /* this will be applied internally, due to 
                       box-sizing property */
 
 }
+
