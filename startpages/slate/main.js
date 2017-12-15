@@ -1,5 +1,8 @@
 function start() {
     document.getElementById('keywords').focus();
+    l = getParameterByName('l');
+    $('.main li').css( 'color', l);
+
     window.setInterval(function() {
         updatetime();
     }, 200);
@@ -10,11 +13,17 @@ function handleKeyPress(e) {
     if (key == 13) {
         var text = document.getElementById("keywords").value;
         var e = getParameterByName('s');
-        if(e == 'g'){
-        	window.location = "https://www.google.co.uk/search?q=" + text;
-        }else{
-        	window.location = "https://duckduckgo.com/?q=" + text;
+        if (e == 'g') {
+            window.location = "https://www.google.co.uk/search?q=" + text;
+        } else {
+            window.location = "https://duckduckgo.com/?q=" + text;
         }
+    }
+}
+
+document.body.onkeyup = function(e) {
+    if (e.keyCode == 32) {
+    	document.getElementById("keywords").focus();
     }
 }
 
