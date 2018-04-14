@@ -3,12 +3,12 @@ var invisinput = document.getElementById("eventlistener");
 
 function check(e) {
     var val = $("#eventlistener").val()
-    if (val.startsWith(';')) {
-        if (e.keyCode == 13) {
-            window.location.href = 'https://google.com/search?q=' + val.replace(';', '')
-            $("#eventlistener").val('')
-        }
+
+    if (e.keyCode == 13) {
+        window.location.href = 'https://google.com/search?q=' + val.replace(';', '')
+        $("#eventlistener").val('')
     }
+
     for (var i in $('.links').children()) {
         var shortcut = $('.links').children()[i].children[0].text.replace('[', '').replace(']', '')
         if (shortcut.includes(val)) {
