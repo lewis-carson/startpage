@@ -1,36 +1,25 @@
-function bang(text) {
-    window.location.href = $('.highlight')[0].children[0].id
-}
-
 var ops = [';']
 var invisinput = document.getElementById("eventlistener");
 
 function check(e) {
     var val = $("#eventlistener").val()
-    for (var i in $('.links').children()) {
-        if ($('.links').children()[i].children === undefined) {
-            break;
+    if (val.startsWith(';')) {
+        if (e.keyCode == 13) {
+            window.location.href = 'https://google.com/search?q=' + val.replace(';', '')
+            $("#eventlistener").val('')
         }
-        var shortcut = $('.links').children()[i].children[0].text.replace('[', '').replace(']', '') //className.split(/\s+/)[1]
-        if (shortcut.includes(val.replace(':', ''))) {
-            console.log(shortcut + ' includes ' + val)
+    }
+    for (var i in $('.links').children()) {
+        var shortcut = $('.links').children()[i].children[0].text.replace('[', '').replace(']', '')
+        if (shortcut.includes(val)) {
             $('.links').children()[i].classList.add("highlight");
         } else {
             $('.links').children()[i].classList.remove("highlight");
         }
     }
-    if (e.keyCode == 13) {
-        for (var i in ops) {
-            if ($("#eventlistener").val().startsWith(ops[i]) == false) {
-                $("#eventlistener").val('')
-                bang(val)
-            }
-        }
-    }
 }
 
 $(function() {
-    console.log("ready!");
     var interval = setInterval(function() {
         if ($('.highlight').children().length === 1) {
             window.location.href = $('.highlight')[0].children[0].id
@@ -40,6 +29,9 @@ $(function() {
         invisinput.focus()
     }, 500);
     for (var i in $('.links').children()) {
+        if ($('.links').children()[i].children === undefined) {
+            break;
+        }
         $('.links').children()[i].classList.add("highlight");
     }
 });
