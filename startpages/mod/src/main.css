@@ -1,3 +1,8 @@
+@font-face {
+    font-family: hand_written;
+    src: url(dream.ttf);
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -24,6 +29,16 @@ body, html {
 	margin: 15px;
 	min-width: 6ch;
 	box-shadow: 15px 15px #071D22;
+	position: relative;
+}
+
+.title{
+	font-family: 'hand_written';
+	font-size: 10px;
+	color: #071D22;
+	position: absolute;
+	top: 103%;
+	left: 0px;
 }
 
 .box ul{
