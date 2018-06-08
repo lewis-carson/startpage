@@ -32,6 +32,20 @@ body, html {
 	position: relative;
 }
 
+.time{
+	background: #071D22;
+	color: #D6D6D6;
+	padding: 15px;
+	border-style: solid;
+	border-width: 10px 10px 30px 10px;
+	border-color: #D6D6D6;
+	margin: 15px;
+	width: 10ch;
+	float:right;
+	box-shadow: 15px 15px #071D22;
+	clear:both;
+}
+
 .title{
 	font-family: 'hand_written';
 	font-size: 10px;
