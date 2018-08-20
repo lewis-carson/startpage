@@ -14,7 +14,7 @@ $(document).ready(function() {
 			var song = (`${track} - ${artist}`)
 			var art = response.recenttracks.track[0].image[3]['#text']
 			if (art == "") {
-				art = localStorage.prev_art
+				art = ""
 			}
 			$('.track').text(track)
 			$('.artist').text(artist)
