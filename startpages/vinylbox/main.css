@@ -1,0 +1,44 @@
+/* latin-ext */
+@font-face {
+  font-family: 'monaco';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://github.com/todylu/monaco.ttf/blob/master/monaco.ttf?raw=true) format('ttf');
+}
+
+body{
+	margin: 100px;
+	background: #d4d7de
+}
+
+*{
+	font-family: 'monaco', sans-serif;
+}
+
+.track{
+	padding-bottom: 10px;
+	max-width: 230px;
+	margin: 20px;
+	margin-bottom: 0px;
+}
+
+.artist{
+	padding-bottom: 30px;
+	max-width: 230px;
+	margin: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+}
+
+
+
+.art{
+	margin: 0px;
+	padding: 0px;
+}
+
+.cartridge{
+	position: absolute;
+	background: white;
+}
