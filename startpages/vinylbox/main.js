@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('.artist').text(localStorage.prev_artist)
 	$(".art").attr("src", localStorage.prev_art);
 	$.ajax({
-		url: `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=torvim&api_key=b3de0e6994fff89e7f73b61216f290ca&format=json`,
+		url: `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=torvim&api_key=b3de0e6994fff89e7f73b61216f290ca&format=json`,
 		type: 'GET',
 		data: {
 			format: 'json'
