@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function update() {
 	$('.track').text(localStorage.prev_track)
 	$('.artist').text(localStorage.prev_artist)
 	$(".art").attr("src", localStorage.prev_art);
@@ -27,4 +27,11 @@ $(document).ready(function() {
 			$('#errors').text("There was an error processing your request. Please try again.");
 		}
 	});
+}
+
+$(document).ready(function() {
+	update()
+	setInterval(function() {
+		update()
+	}, 3000);
 });
