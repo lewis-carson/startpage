@@ -1,9 +1,7 @@
 /* latin-ext */
 @font-face {
-  font-family: 'monaco';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://github.com/todylu/monaco.ttf/blob/master/monaco.ttf?raw=true) format('ttf');
+  font-family: 'aek';
+  src: url(aek.otf) format('otf');
 }
 
 body{
@@ -12,7 +10,7 @@ body{
 }
 
 *{
-	font-family: 'Univers 57 Condensed', sans-serif;
+	font-family: 'aek', sans-serif;
 }
 
 .track{
@@ -30,7 +28,6 @@ body{
 	margin-bottom: 0px;
 	font-size: 20px;
 }
-
 
 
 .art{
